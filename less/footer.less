@@ -1,0 +1,36 @@
+footer{
+    background: @light-blue;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    // position: fixed;
+    width: 100%;
+
+    @media @mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p{
+        margin-right: 5%;
+
+        @media @mobile{
+            margin: 10px 0 0;
+        }
+    }
+
+    .admin-login-btn{
+        text-decoration: none;
+        .btn-mixin;
+        height: 27px;
+        margin-left: 5%;
+
+        @media @mobile{
+            margin: 0;
+            font-size: 3.6rem;
+            height: 42px;
+            width: 45%;
+            padding: 0 12%;
+        }
+    }
+}
