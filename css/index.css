@@ -466,25 +466,52 @@ footer .admin-login-btn:hover {
 .about-us .about-tabs .people {
   border: 1px solid blue;
 }
-.about-us .about-tabs .people .hidden-content {
-  display: none;
-}
 .about-us .about-tabs .people .single-person {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: auto;
+  padding: 0 5%;
 }
 .about-us .about-tabs .people .single-person .tab-img-container {
   display: block;
   padding-top: 20px;
-  width: 50%;
+  width: 25%;
   height: 250px;
 }
 .about-us .about-tabs .people .single-person img {
-  width: 50%;
+  max-width: 200px;
+  width: 75%;
   height: auto;
   border-radius: 60px;
 }
 .about-us .about-tabs .people .single-person a {
   text-decoration: none;
+}
+.about-us .about-tabs .people .multi-person {
+  justify-content: space-around;
+  display: flex;
+}
+.about-us .about-tabs .people .multi-person .front-end {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+}
+.about-us .about-tabs .people .multi-person .front-end .tab-img-container {
+  width: 95%;
+}
+.about-us .about-tabs .people .multi-person .front-end img {
+  display: block;
+  max-width: 300px;
+  width: 80%;
+  margin: 20px auto;
+  height: auto;
+  border-radius: 60px;
+}
+.about-us .about-tabs .people .multi-person .front-end a {
+  text-decoration: none;
+}
+.about-us .about-tabs .people .hidden-content {
+  display: none;
 }
