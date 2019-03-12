@@ -358,7 +358,7 @@ footer .admin-login-btn:hover {
   margin-bottom: 10px;
 }
 .home .main-content .hunger p {
-  width: 95%;
+  width: 80%;
   margin: auto;
 }
 .home .main-content .testimonial-container {
@@ -390,12 +390,11 @@ footer .admin-login-btn:hover {
 .home .main-content .testimonial p {
   width: 30%;
   height: auto;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 @media (max-width: 500px) {
   .home .main-content .testimonial p {
     width: 95%;
-    padding-top: 20px;
   }
 }
 .home .main-content .testimonial .img-container {
