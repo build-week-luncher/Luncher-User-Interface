@@ -1,3 +1,58 @@
 .about-us{
-    
+    .heading{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        height: 235px;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid red;
+        margin-top: 35px;
+        border-radius: 120px;
+        //NEEDS BACKGROUND IMAGE
+
+        h1{
+            width: 50%;
+            text-align: center;
+        }
+
+        p{
+            width: 40%;
+            font-size: 2rem;
+            margin-right: 5%;
+        }
+    }
+
+    .about-tabs{
+        border: 1px solid red;
+        .tabs{
+            border: 1px solid black;
+            display: flex;
+            height: 50px;
+            align-items: center;
+            background: @light-blue;
+            justify-content: space-between;
+
+            .tab{
+                width: 24.9%;
+                height: 100%;
+                padding-top: 15px;
+                text-align: center;
+                font-size: 1.6rem;
+                background: @light-blue;
+                border-top-left-radius: 25px;
+                border-top-right-radius: 5px;
+                color: white;
+            }
+
+            .active-tab{
+                background:white;
+                color: @font-blue;
+            }
+        }
+
+        .people{
+            border: 1px solid blue;
+        }
+    }
 }
