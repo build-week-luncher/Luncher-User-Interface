@@ -517,7 +517,7 @@ footer .admin-login-btn:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: auto;
+  height: 305px;
   padding: 0 5%;
 }
 @media (max-width: 500px) {
@@ -537,7 +537,8 @@ footer .admin-login-btn:hover {
   }
 }
 .about-us .about-tabs .people .single-person img {
-  max-width: 200px;
+  max-width: 220px;
+  max-height: 220px;
   width: 75%;
   height: auto;
   border-radius: 60px;
@@ -559,6 +560,14 @@ footer .admin-login-btn:hover {
 .about-us .about-tabs .people .multi-person {
   justify-content: space-around;
   display: flex;
+  height: 305px;
+}
+@media (max-width: 500px) {
+  .about-us .about-tabs .people .multi-person {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
 }
 .about-us .about-tabs .people .multi-person .front-end {
   display: flex;
@@ -566,16 +575,27 @@ footer .admin-login-btn:hover {
   width: 30%;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .about-us .about-tabs .people .multi-person .front-end {
+    width: 75%;
+  }
+}
 .about-us .about-tabs .people .multi-person .front-end .tab-img-container {
   width: 95%;
 }
 .about-us .about-tabs .people .multi-person .front-end img {
   display: block;
-  max-width: 300px;
+  max-width: 230px;
   width: 80%;
   margin: 20px auto;
+  max-height: 230px;
   height: auto;
   border-radius: 60px;
+}
+@media (max-width: 500px) {
+  .about-us .about-tabs .people .multi-person .front-end img {
+    max-width: 200px;
+  }
 }
 .about-us .about-tabs .people .multi-person .front-end a {
   text-decoration: none;

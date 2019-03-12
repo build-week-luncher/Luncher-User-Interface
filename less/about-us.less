@@ -101,7 +101,7 @@
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                height: auto;
+                height: 305px;
                 padding: 0 5%;
 
                 @media @mobile{
@@ -120,7 +120,8 @@
                 }
 
                 img{
-                    max-width: 200px;
+                    max-width: 220px;
+                    max-height: 220px;
                     width: 75%;
                     height: auto;
                     border-radius: 60px;
@@ -143,13 +144,23 @@
             .multi-person{
                 justify-content: space-around;
                 display: flex;
+                height: 305px;
+
+                @media @mobile{
+                    flex-direction: column;
+                    align-items: center;
+                    height: auto;
+                }
 
                 .front-end{
                     display: flex;
                     flex-direction: column;
                     width: 30%;
-
                     align-items: center;
+
+                    @media @mobile{
+                        width: 75%;
+                    }
 
                     .tab-img-container{
                         width: 95%;
@@ -157,11 +168,16 @@
 
                     img{
                         display: block;
-                        max-width: 300px;
+                        max-width: 230px;
                         width: 80%;
                         margin: 20px auto;
+                        max-height: 230px;
                         height: auto;
                         border-radius: 60px;
+
+                        @media @mobile{
+                            max-width: 200px;
+                        }
                     }
 
                     a{
