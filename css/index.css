@@ -475,13 +475,13 @@ footer .admin-login-btn:hover {
   align-items: center;
   background: #4DB3AF;
   justify-content: space-between;
+  width: 95%;
+  margin: auto;
 }
 @media (max-width: 500px) {
   .about-us .about-tabs .tabs {
     flex-direction: column;
     height: auto;
-    width: 95%;
-    margin: auto;
   }
 }
 .about-us .about-tabs .tabs .tab {
@@ -509,13 +509,9 @@ footer .admin-login-btn:hover {
 .about-us .about-tabs .people {
   border: 1px solid #33475B;
   border-top: none;
+  width: 95%;
+  margin: auto;
   margin-bottom: 20px;
-}
-@media (max-width: 500px) {
-  .about-us .about-tabs .people {
-    width: 95%;
-    margin: auto;
-  }
 }
 .about-us .about-tabs .people .single-person {
   display: flex;
