@@ -53,6 +53,33 @@
 
         .people{
             border: 1px solid blue;
+
+            .hidden-content{
+                display: none;
+            }
+
+            .single-person{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .tab-img-container{
+                    display: block;
+                    padding-top: 20px;
+                    width: 50%;
+                    height: 250px;
+                }
+
+                img{
+                    width: 50%;
+                    height: auto;
+                    border-radius: 60px;
+                }
+
+                a{
+                    text-decoration: none; 
+                }
+            }
         }
     }
 }

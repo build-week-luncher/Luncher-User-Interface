@@ -466,3 +466,25 @@ footer .admin-login-btn:hover {
 .about-us .about-tabs .people {
   border: 1px solid blue;
 }
+.about-us .about-tabs .people .hidden-content {
+  display: none;
+}
+.about-us .about-tabs .people .single-person {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-us .about-tabs .people .single-person .tab-img-container {
+  display: block;
+  padding-top: 20px;
+  width: 50%;
+  height: 250px;
+}
+.about-us .about-tabs .people .single-person img {
+  width: 50%;
+  height: auto;
+  border-radius: 60px;
+}
+.about-us .about-tabs .people .single-person a {
+  text-decoration: none;
+}
