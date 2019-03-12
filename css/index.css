@@ -428,25 +428,61 @@ footer .admin-login-btn:hover {
   margin-top: 35px;
   border-radius: 120px;
 }
+@media (max-width: 500px) {
+  .about-us .heading {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    border-radius: 25px;
+    margin-bottom: 20px;
+  }
+}
 .about-us .heading h1 {
   width: 50%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .about-us .heading h1 {
+    width: 95%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
 }
 .about-us .heading p {
   width: 40%;
   font-size: 2rem;
   margin-right: 5%;
 }
+@media (max-width: 500px) {
+  .about-us .heading p {
+    width: 95%;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+}
 .about-us .about-tabs {
-  border: 1px solid red;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.about-us .about-tabs h2 {
+  text-align: center;
 }
 .about-us .about-tabs .tabs {
-  border: 1px solid black;
+  border: 1px solid #33475B;
+  border-bottom: none;
   display: flex;
   height: 50px;
   align-items: center;
   background: #4DB3AF;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .about-us .about-tabs .tabs {
+    flex-direction: column;
+    height: auto;
+    width: 95%;
+    margin: auto;
+  }
 }
 .about-us .about-tabs .tabs .tab {
   width: 24.9%;
@@ -459,12 +495,27 @@ footer .admin-login-btn:hover {
   border-top-right-radius: 5px;
   color: white;
 }
+@media (max-width: 500px) {
+  .about-us .about-tabs .tabs .tab {
+    width: 100%;
+    height: 50px;
+    font-size: 2rem;
+  }
+}
 .about-us .about-tabs .tabs .active-tab {
   background: white;
   color: #33475B;
 }
 .about-us .about-tabs .people {
-  border: 1px solid blue;
+  border: 1px solid #33475B;
+  border-top: none;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .about-us .about-tabs .people {
+    width: 95%;
+    margin: auto;
+  }
 }
 .about-us .about-tabs .people .single-person {
   display: flex;
@@ -473,11 +524,21 @@ footer .admin-login-btn:hover {
   height: auto;
   padding: 0 5%;
 }
+@media (max-width: 500px) {
+  .about-us .about-tabs .people .single-person {
+    flex-direction: column;
+  }
+}
 .about-us .about-tabs .people .single-person .tab-img-container {
   display: block;
   padding-top: 20px;
   width: 25%;
   height: 250px;
+}
+@media (max-width: 500px) {
+  .about-us .about-tabs .people .single-person .tab-img-container {
+    width: 95%;
+  }
 }
 .about-us .about-tabs .people .single-person img {
   max-width: 200px;
@@ -485,8 +546,19 @@ footer .admin-login-btn:hover {
   height: auto;
   border-radius: 60px;
 }
+@media (max-width: 500px) {
+  .about-us .about-tabs .people .single-person img {
+    display: block;
+    margin: auto;
+  }
+}
 .about-us .about-tabs .people .single-person a {
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  .about-us .about-tabs .people .single-person a {
+    margin-bottom: 10px;
+  }
 }
 .about-us .about-tabs .people .multi-person {
   justify-content: space-around;
