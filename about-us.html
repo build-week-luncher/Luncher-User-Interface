@@ -6,6 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" type="text/css" media="screen" href="CSS/index.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer="defer" src="./js/about.js"></script>
     </head>
 
 
@@ -21,14 +22,62 @@
         </header>
 
         <div class="container about-us">
-            <h1>About Us</h1>
+            <div class="heading">
+                <h1>About<br>Us</h1>
 
-            <div class="about-content">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, animi quas quod possimus sed corporis porro, eos temporibus architecto, eaque perferendis maxime soluta hic quam? Error tenetur quia eum sint.
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, animi quas quod possimus sed corporis porro, eos temporibus architecto, eaque perferendis maxime soluta hic quam? Error tenetur quia eum sint.
+                </p>
             </div>
 
             <div class="about-tabs">
                 <h2>Our Team</h2>
+                <div class="tabs">
+                    <div class="tab active-tab" data-tab="1">Team Lead</div>
+                    <div class="tab" data-tab="2">Front-End Architect</div>
+                    <div class="tab" data-tab="3">Back-End Architect</div>
+                    <div class="tab" data-tab="4">User Interface Developer</div>
+                </div>
+                <div class="people">
+                    <div class="tab-content single-person" data-tab="1">
+                        <div class="tab-img-container">
+                            <img src="/about-pics/Jasmine.jpg" alt="Jasmine Galang">
+                        </div>
+                        <a href="https://github.com/jsmnglng" target="_blank"><h2>Jasmine Galang</h2></a>
+                    </div>
+                    <div class="tab-content multi-person hidden-content" data-tab="2">
+                        <div class="front-end">
+                            <div class="tab-img-container">
+                                <img src="/about-pics/itel.jpg" alt="Itel Domingo">
+                            </div>
+                            <a href="https://github.com/ItelSunday" target="_blank"><h2>Itel Domingo</h2></a>
+                        </div>
+                        <div class="front-end">
+                            <div class="tab-img-container">
+                                <img src="/about-pics/cori.jpg" alt="Cori Peck">
+                            </div>
+                            <a href="https://github.com/cori-peck" target="_blank"><h2>Cori Peck</h2></a>
+                        </div>
+                        <div class="front-end">
+                            <div class="tab-img-container">
+                                <img src="/about-pics/julian.JPG" alt="Julian Moreno">
+                            </div>
+                            <a href="https://github.com/julmo611" target="_blank"><h2>Julian Moreno</h2></a>
+                        </div>
+                    </div>
+                    <div class="tab-content single-person hidden-content" data-tab="3">
+                        <div class="tab-img-container">
+                            <img src="/about-pics/rudy.jpg" alt="Rudy Mejia">
+                        </div>
+                        <a href="https://github.com/rmejia-tajc" target="_blank"><h2>Rudy Mejia</h2></a>
+                    </div>
+                    <div class="tab-content single-person hidden-content" data-tab="4">
+                        <div class="tab-img-container">
+                            <img src="/about-pics/andrew.jpg" alt="Andrew Safran">
+                        </div>
+                        <a href="https://github.com/AWSafran" target="_blank"><h2>Andrew Safran</h2></a>
+                    </div>
+                </div>
                 
             </div>
         </div>

@@ -1,0 +1,194 @@
+.about-us{
+    .heading{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        height: 235px;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid red;
+        margin-top: 35px;
+        border-radius: 120px;
+        //NEEDS BACKGROUND IMAGE
+
+        @media @mobile{
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            border-radius: 25px;
+            margin-bottom: 20px;
+        }
+
+        h1{
+            width: 50%;
+            text-align: center;
+
+            @media @mobile{
+                width: 95%;
+                margin-bottom: 20px;
+                margin-top: 10px;
+            }
+        }
+
+        p{
+            width: 40%;
+            font-size: 2rem;
+            margin-right: 5%;
+
+            @media @mobile{
+                width: 95%;
+                margin: auto;
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    .about-tabs{
+        //border: 1px solid @font-blue;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        h2{
+            text-align: center;
+        }
+        .tabs{
+            border: 1px solid @font-blue;
+            border-bottom: none;
+            display: flex;
+            height: 50px;
+            align-items: center;
+            background: @light-blue;
+            justify-content: space-between;
+            width: 95%;
+            margin: auto;
+
+            @media @mobile{
+                flex-direction: column;
+                height: auto;
+            }
+
+            .tab{
+                width: 24.9%;
+                height: 100%;
+                padding-top: 15px;
+                text-align: center;
+                font-size: 1.6rem;
+                background: @light-blue;
+                border-top-left-radius: 25px;
+                border-top-right-radius: 5px;
+                color: white;
+
+                @media @mobile{
+                    width: 100%;
+                    height: 50px;
+                    font-size: 2rem;
+                }
+            }
+
+            .active-tab{
+                background:white;
+                color: @font-blue;
+            }
+        }
+
+        .people{
+            border: 1px solid @font-blue;
+            border-top: none;
+            width: 95%;
+            margin: auto;
+            margin-bottom: 20px;
+
+            .single-person{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 305px;
+                padding: 0 5%;
+
+                @media @mobile{
+                    flex-direction: column;
+                }
+
+                .tab-img-container{
+                    display: block;
+                    padding-top: 20px;
+                    width: 25%;
+                    height: 250px;
+
+                    @media @mobile{
+                        width: 95%;
+                    }
+                }
+
+                img{
+                    max-width: 220px;
+                    max-height: 220px;
+                    width: 75%;
+                    height: auto;
+                    border-radius: 60px;
+
+                    @media @mobile{
+                        display: block;
+                        margin: auto;
+                    }
+                }
+
+                a{
+                    text-decoration: none; 
+
+                    @media @mobile{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+            .multi-person{
+                justify-content: space-around;
+                display: flex;
+                height: 305px;
+
+                @media @mobile{
+                    flex-direction: column;
+                    align-items: center;
+                    height: auto;
+                }
+
+                .front-end{
+                    display: flex;
+                    flex-direction: column;
+                    width: 30%;
+                    align-items: center;
+
+                    @media @mobile{
+                        width: 75%;
+                    }
+
+                    .tab-img-container{
+                        width: 95%;
+                    }
+
+                    img{
+                        display: block;
+                        max-width: 230px;
+                        width: 80%;
+                        margin: 20px auto;
+                        max-height: 230px;
+                        height: auto;
+                        border-radius: 60px;
+
+                        @media @mobile{
+                            max-width: 200px;
+                        }
+                    }
+
+                    a{
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .hidden-content{
+                display: none;
+            }
+        }
+    }
+}
