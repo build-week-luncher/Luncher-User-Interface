@@ -549,6 +549,9 @@ footer .admin-login-btn:hover {
     margin: auto;
   }
 }
+.about-us .about-tabs .people .single-person h2 {
+  width: 250px;
+}
 .about-us .about-tabs .people .single-person a {
   text-decoration: none;
 }
@@ -596,6 +599,9 @@ footer .admin-login-btn:hover {
   .about-us .about-tabs .people .multi-person .front-end img {
     max-width: 200px;
   }
+}
+.about-us .about-tabs .people .multi-person .front-end h2 {
+  width: 250px;
 }
 .about-us .about-tabs .people .multi-person .front-end a {
   text-decoration: none;
