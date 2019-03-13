@@ -306,12 +306,17 @@ footer .admin-login-btn:hover {
   display: flex;
   justify-content: space-around;
   padding-top: 20px;
+  background-color: #848484;
+  background-blend-mode: lighten;
+  background-image: url("/background-img/lunch.jpg");
+  background-size: cover;
 }
 @media (max-width: 500px) {
   .home .cta {
     flex-direction: column-reverse;
     height: 800px;
     align-items: center;
+    background-image: url("/background-img/foodcounter.jpg");
   }
 }
 .home .cta .cta-text {
@@ -424,9 +429,12 @@ footer .admin-login-btn:hover {
   height: 235px;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
   margin-top: 35px;
   border-radius: 120px;
+  background-color: #969696;
+  background-size: cover;
+  background-image: url("/background-img/businessteam.jpg");
+  background-blend-mode: lighten;
 }
 @media (max-width: 500px) {
   .about-us .heading {
@@ -435,6 +443,7 @@ footer .admin-login-btn:hover {
     height: auto;
     border-radius: 25px;
     margin-bottom: 20px;
+    background-image: url("/background-img/developers.jpg");
   }
 }
 .about-us .heading h1 {

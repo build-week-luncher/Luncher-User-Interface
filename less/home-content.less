@@ -10,11 +10,16 @@
         display: flex;
         justify-content: space-around;
         padding-top: 20px;
+        background-color: #848484;
+        background-blend-mode: lighten;
+        background-image: url("/background-img/lunch.jpg");
+        background-size: cover;
 
         @media @mobile{
             flex-direction: column-reverse;
             height: 800px;
             align-items: center;
+            background-image: url("/background-img/foodcounter.jpg");
         }
 
         .cta-text{
