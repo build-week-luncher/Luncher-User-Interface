@@ -8,12 +8,12 @@
         align-items: center;
         //border: 1px solid red;
         margin-top: 35px;
-        border-radius: 120px;
+        border-radius: 30px;
         //NEEDS BACKGROUND IMAGE
-        background-color: #969696;
+        background-color: #848484;
+        background: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url(/background-img/businessteam.jpg) no-repeat center;
         background-size: cover;
-        background-image: url("/background-img/businessteam.jpg");
-        background-blend-mode: lighten;
+        background-attachment: fixed;
 
         @media @mobile{
             flex-direction: column;
@@ -21,12 +21,14 @@
             height: auto;
             border-radius: 25px;
             margin-bottom: 20px;
-            background-image: url("/background-img/developers.jpg");
+            background: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url(/background-img/developers.jpg) no-repeat center;
+            background-size: 100%;
         }
 
         h1{
             width: 50%;
             text-align: center;
+            color: white;
 
             @media @mobile{
                 width: 95%;
@@ -39,6 +41,7 @@
             width: 40%;
             font-size: 2rem;
             margin-right: 5%;
+            color: white;
 
             @media @mobile{
                 width: 95%;
@@ -185,7 +188,7 @@
                         border-radius: 60px;
 
                         @media @mobile{
-                            max-width: 200px;
+                            max-width: 217px;
                         }
                     }
 

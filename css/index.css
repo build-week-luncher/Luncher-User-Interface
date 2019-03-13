@@ -135,6 +135,7 @@ html {
 html,
 body {
   font-family: 'Roboto';
+  background-color: #fafafa;
 }
 h1,
 h2,
@@ -171,14 +172,18 @@ img {
 }
 .btn-mixin {
   background: #FF7A59;
-  padding: 0 10px;
-  border: 2px solid #33475B;
-  color: #33475B;
+  padding: 7px 30px;
+  border: 2px solid #FF7A59;
+  color: white;
   font-size: 2rem;
   border-radius: 5px;
+  text-decoration: none;
 }
 .btn-mixin:hover {
-  background: #4DB3AF;
+  background: white;
+  color: #33475B;
+  border: 2px solid white;
+  box-shadow: 1px 1px 1px 2px #9c9c9c;
 }
 header {
   background: #4DB3AF;
@@ -196,7 +201,7 @@ header {
 header a {
   font-size: 1.6rem;
   text-decoration: none;
-  color: #33475B;
+  color: white;
   font-size: 2rem;
 }
 @media (max-width: 500px) {
@@ -216,7 +221,7 @@ header .head-luncher {
   }
 }
 header .nav-link {
-  padding-top: 5px;
+  padding-top: 7px;
 }
 header nav {
   display: flex;
@@ -234,15 +239,18 @@ header nav {
 }
 header .nav-btn {
   background: #FF7A59;
-  padding: 0 10px;
-  border: 2px solid #33475B;
-  color: #33475B;
+  padding: 7px 30px;
+  border: 2px solid #FF7A59;
+  color: white;
   font-size: 2rem;
   border-radius: 5px;
-  height: 27px;
+  text-decoration: none;
 }
 header .nav-btn:hover {
-  background: #4DB3AF;
+  background: white;
+  color: #33475B;
+  border: 2px solid white;
+  box-shadow: 1px 1px 1px 2px #9c9c9c;
 }
 @media (max-width: 500px) {
   header .nav-btn {
@@ -275,18 +283,21 @@ footer p {
   }
 }
 footer .admin-login-btn {
-  text-decoration: none;
   background: #FF7A59;
-  padding: 0 10px;
-  border: 2px solid #33475B;
-  color: #33475B;
+  padding: 7px 30px;
+  border: 2px solid #FF7A59;
+  color: white;
   font-size: 2rem;
   border-radius: 5px;
+  text-decoration: none;
   height: 27px;
   margin-left: 5%;
 }
 footer .admin-login-btn:hover {
-  background: #4DB3AF;
+  background: white;
+  color: #33475B;
+  border: 2px solid white;
+  box-shadow: 1px 1px 1px 2px #9c9c9c;
 }
 @media (max-width: 500px) {
   footer .admin-login-btn {
@@ -307,16 +318,17 @@ footer .admin-login-btn:hover {
   justify-content: space-around;
   padding-top: 20px;
   background-color: #848484;
-  background-blend-mode: lighten;
-  background-image: url("/background-img/lunch.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url(/background-img/lunch.jpg) no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
 }
 @media (max-width: 500px) {
   .home .cta {
     flex-direction: column-reverse;
     height: 800px;
     align-items: center;
-    background-image: url("/background-img/foodcounter.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url(/background-img/foodcounter.jpg) no-repeat center;
+    background-size: 200%;
   }
 }
 .home .cta .cta-text {
@@ -330,26 +342,36 @@ footer .admin-login-btn:hover {
 .home .cta img {
   margin-top: 10px;
 }
+@media (max-width: 500px) {
+  .home .cta img {
+    width: 85%;
+  }
+}
 .home .cta h1 {
   margin-top: 20px;
   margin-bottom: 20px;
+  color: white;
 }
 .home .cta p {
   font-size: 2.4rem;
   width: 90%;
   margin: 25px auto;
+  color: white;
 }
 .home .cta .cta-btn {
   background: #FF7A59;
-  padding: 0 10px;
-  border: 2px solid #33475B;
-  color: #33475B;
+  padding: 7px 30px;
+  border: 2px solid #FF7A59;
+  color: white;
   font-size: 2rem;
   border-radius: 5px;
   text-decoration: none;
 }
 .home .cta .cta-btn:hover {
-  background: #4DB3AF;
+  background: white;
+  color: #33475B;
+  border: 2px solid white;
+  box-shadow: 1px 1px 1px 2px #9c9c9c;
 }
 .home .main-content {
   width: 95%;
@@ -382,7 +404,8 @@ footer .admin-login-btn:hover {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 2px 2px 2px 3px #adadad;
+  background-color: white;
+  border: 1px solid #e6e6e6;
 }
 @media (max-width: 500px) {
   .home .main-content .testimonial {
@@ -400,6 +423,7 @@ footer .admin-login-btn:hover {
 @media (max-width: 500px) {
   .home .main-content .testimonial p {
     width: 95%;
+    order: 1;
   }
 }
 .home .main-content .testimonial .img-container {
@@ -414,7 +438,8 @@ footer .admin-login-btn:hover {
 .home .main-content .testimonial img {
   max-width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 35px;
+  padding: 20px;
 }
 @media (max-width: 500px) {
   .home .main-content .testimonial img {
@@ -430,11 +455,11 @@ footer .admin-login-btn:hover {
   justify-content: space-between;
   align-items: center;
   margin-top: 35px;
-  border-radius: 120px;
-  background-color: #969696;
+  border-radius: 30px;
+  background-color: #848484;
+  background: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url(/background-img/businessteam.jpg) no-repeat center;
   background-size: cover;
-  background-image: url("/background-img/businessteam.jpg");
-  background-blend-mode: lighten;
+  background-attachment: fixed;
 }
 @media (max-width: 500px) {
   .about-us .heading {
@@ -443,12 +468,14 @@ footer .admin-login-btn:hover {
     height: auto;
     border-radius: 25px;
     margin-bottom: 20px;
-    background-image: url("/background-img/developers.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url(/background-img/developers.jpg) no-repeat center;
+    background-size: 100%;
   }
 }
 .about-us .heading h1 {
   width: 50%;
   text-align: center;
+  color: white;
 }
 @media (max-width: 500px) {
   .about-us .heading h1 {
@@ -461,6 +488,7 @@ footer .admin-login-btn:hover {
   width: 40%;
   font-size: 2rem;
   margin-right: 5%;
+  color: white;
 }
 @media (max-width: 500px) {
   .about-us .heading p {
@@ -606,7 +634,7 @@ footer .admin-login-btn:hover {
 }
 @media (max-width: 500px) {
   .about-us .about-tabs .people .multi-person .front-end img {
-    max-width: 200px;
+    max-width: 217px;
   }
 }
 .about-us .about-tabs .people .multi-person .front-end h2 {
