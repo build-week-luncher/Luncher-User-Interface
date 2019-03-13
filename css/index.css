@@ -276,6 +276,7 @@ footer {
 }
 footer p {
   margin-right: 5%;
+  padding-top: 5px;
 }
 @media (max-width: 500px) {
   footer p {
@@ -290,7 +291,6 @@ footer .admin-login-btn {
   font-size: 2rem;
   border-radius: 5px;
   text-decoration: none;
-  height: 27px;
   margin-left: 5%;
 }
 footer .admin-login-btn:hover {
@@ -505,7 +505,7 @@ footer .admin-login-btn:hover {
   text-align: center;
 }
 .about-us .about-tabs .tabs {
-  border: 1px solid #33475B;
+  border: 1px solid #e6e6e6;
   border-bottom: none;
   display: flex;
   height: 50px;
@@ -544,7 +544,7 @@ footer .admin-login-btn:hover {
   color: #33475B;
 }
 .about-us .about-tabs .people {
-  border: 1px solid #33475B;
+  border: 1px solid #e6e6e6;
   border-top: none;
   width: 95%;
   margin: auto;
@@ -576,7 +576,7 @@ footer .admin-login-btn:hover {
 .about-us .about-tabs .people .single-person img {
   max-width: 220px;
   max-height: 220px;
-  width: 75%;
+  width: 100%;
   height: auto;
   border-radius: 60px;
 }
