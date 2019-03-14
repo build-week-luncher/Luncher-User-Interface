@@ -279,6 +279,7 @@ footer {
   background: #4DB3AF;
   display: flex;
   justify-content: space-between;
+  text-align: center;
   padding: 10px;
   width: 100%;
 }
@@ -291,6 +292,7 @@ footer {
 footer p {
   margin-right: 5%;
   padding-top: 5px;
+  width: 100%;
 }
 @media (max-width: 500px) {
   footer p {
