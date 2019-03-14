@@ -198,6 +198,7 @@ header {
   header {
     flex-direction: column;
     align-items: center;
+    position: static;
   }
 }
 header a {
@@ -312,6 +313,11 @@ footer .admin-login-btn:hover {
 }
 .home {
   margin-top: 90px;
+}
+@media (max-width: 500px) {
+  .home {
+    margin-top: 20px;
+  }
 }
 .home .cta {
   width: 95%;
@@ -455,6 +461,11 @@ footer .admin-login-btn:hover {
 }
 .about-us {
   margin-top: 90px;
+}
+@media (max-width: 500px) {
+  .about-us {
+    margin-top: 20px;
+  }
 }
 .about-us .heading {
   width: 95%;
