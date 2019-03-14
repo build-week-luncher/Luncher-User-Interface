@@ -4,7 +4,7 @@
     @media @mobile{
         margin-top: 20px;
     }
-    
+ 
     .cta{
         //NEEDS BACKGROUND IMAGE
         //border: 1px solid red;
@@ -21,6 +21,10 @@
         background-size: cover;
         background-attachment: fixed;
 
+        @media @tablet{
+            height: 400px;
+        }
+        
         @media @mobile{
             flex-direction: column-reverse;
             height: 800px;
@@ -29,12 +33,20 @@
             background-size: 200%
         }
 
+
+
         .cta-text{
             width: 55%;
+            
+            @media @tablet{
+                width: 60%;
+            }
 
             @media @mobile{
                 width: 90%;
             }
+
+
         }
 
         img{
@@ -139,12 +151,13 @@
                 max-width: 100%;
                 height: auto;
                 border-radius: 35px;
-                padding: 20px;
-                //border: 1px solid red;
+                margin: 20px;
+                border-bottom: 2px solid silver;
                 
                 @media @mobile{
                     width: 100%;
                     margin: auto;
+                    margin-top: 20px;
                 }
             }
         }
