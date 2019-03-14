@@ -1,4 +1,10 @@
 .home{
+    margin-top: 90px;
+
+    @media @mobile{
+        margin-top: 20px;
+    }
+ 
     .cta{
         //NEEDS BACKGROUND IMAGE
         //border: 1px solid red;
@@ -10,34 +16,58 @@
         display: flex;
         justify-content: space-around;
         padding-top: 20px;
+        background-color: #848484;
+        background: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url(/background-img/lunch.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
 
+        @media @tablet{
+            height: 400px;
+        }
+        
         @media @mobile{
             flex-direction: column-reverse;
             height: 800px;
             align-items: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url(/background-img/foodcounter.jpg) no-repeat center;
+            background-size: 200%
         }
+
+
 
         .cta-text{
             width: 55%;
+            
+            @media @tablet{
+                width: 60%;
+            }
 
             @media @mobile{
                 width: 90%;
             }
+
+
         }
 
         img{
             margin-top: 10px;
+
+            @media @mobile{
+                width: 85%;
+            }
         }
 
         h1{
             margin-top: 20px;
             margin-bottom: 20px;
+            color: white;
         }
 
         p{
             font-size: 2.4rem;
             width: 90%;
             margin: 25px auto;
+            color: white;
         }
 
         .cta-btn{
@@ -63,6 +93,7 @@
             p{
                 width: 80%;
                 margin: auto;
+                text-align: center;
             }
         }
 
@@ -84,7 +115,8 @@
             margin-bottom: 30px;
             margin-left: auto;
             margin-right: auto;
-            box-shadow: 2px 2px 2px 3px #adadad;
+            background-color: white;
+            border: 1px solid #e6e6e6;
 
             @media @mobile{
                 flex-direction: column;
@@ -101,6 +133,7 @@
 
                 @media @mobile{
                     width: 95%;
+                    order: 1;
                 }
             }
 
@@ -117,12 +150,14 @@
             img{
                 max-width: 100%;
                 height: auto;
-                border-radius: 5px;
-                //border: 1px solid red;
+                border-radius: 35px;
+                margin: 20px;
+                border-bottom: 2px solid silver;
                 
                 @media @mobile{
                     width: 100%;
                     margin: auto;
+                    margin-top: 20px;
                 }
             }
         }
