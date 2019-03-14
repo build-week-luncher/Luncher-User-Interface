@@ -600,6 +600,7 @@ footer .admin-login-btn:hover {
   align-items: center;
   height: 305px;
   padding: 0 5%;
+  background-color: white;
 }
 @media (max-width: 500px) {
   .about-us .about-tabs .people .single-person {
@@ -645,6 +646,7 @@ footer .admin-login-btn:hover {
   justify-content: space-around;
   display: flex;
   height: 305px;
+  background-color: white;
 }
 @media (max-width: 500px) {
   .about-us .about-tabs .people .multi-person {
